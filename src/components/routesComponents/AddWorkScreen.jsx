@@ -1,7 +1,7 @@
 
 const AddWorkScreen = ({ navigation }) => {
   const handleFormObra = () => {
-    // Navega para a tela 'NovaObra' usando o navigation.navigate
+    // Navega para a tela 'NovaObra' usando o navigation.navigate 
     navigation.navigate('NovaObra');
   };
 

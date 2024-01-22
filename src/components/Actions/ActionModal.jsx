@@ -2,7 +2,7 @@
 import React from "react";
 import { Modal, TouchableOpacity, Text, StyleSheet, View } from "react-native";
 
-// Componente funcional ActionModal para lidar com o modal e os botões
+// Componente funcional ActionModal para lidar com o modal e os botões 
 export function ActionModal({ visible, handleClose, handleFormObra, handleMensagem }) {
   
   
