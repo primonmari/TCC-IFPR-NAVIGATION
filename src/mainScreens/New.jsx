@@ -18,17 +18,22 @@ const New = () => {
   };
 
   const handleFormObra = () => {
+    // Mensagem para indicar que o botão Nova Obra foi pressionado
     console.log('Botão Nova Obra pressionado!');
-  
+    
+    // Oculta o modal quando o botão é pressionado
     setVisibleModal(false);
-  
+    
+    // Obtém o estado de navegação atual
     const navigationState = navigation.getState();
     console.log('Estado de Navegação:', navigationState);
-  
+    
+    // Verifica se há rotas no estado de navegação
     if (navigationState && navigationState.routes.length > 0) {
+      // Procura a rota com o nome 'TelaNovaObra' no estado de navegação
       const stackNavigatorRoute = navigationState.routes.find(route => route.name === 'TelaNovaObra');
       console.log('Rota StackNavigator:', stackNavigatorRoute);
-  
+    
       // Verifica se a rota foi encontrada no estado de navegação
       if (stackNavigatorRoute) {
         // Navega para a rota 'TelaNovaObra' dentro do StackNavigator
@@ -36,6 +41,7 @@ const New = () => {
       }
     }
   };
+  
   
   const handleMensagem = () => {
     setVisibleModal(false);
