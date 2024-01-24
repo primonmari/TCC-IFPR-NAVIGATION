@@ -63,14 +63,15 @@
         {/* Configuração da tela "Adicionar" */}
         <Tab.Screen
           name="Adicionar"
-          component={New}
           options={{
             tabBarLabel: '',  // Rótulo na aba (vazio para esconder)
             tabBarLabelStyle: {
               color: 'gray',  // Cor do rótulo
             },
           }}
-        />
+        >
+          {({ navigation }) => <New navigation={navigation} />}
+        </Tab.Screen>
         {/* Configuração da tela "Notificações" */}
         <Tab.Screen
           name="Notificacoes"

@@ -23,9 +23,12 @@ export function ActionModal({ visible, handleClose, handleFormObra, handleMensag
         {/* Conteúdo do modal */}
         <View style={styles.modalContent}>
           {/* Botão dentro do modal para nova obra */}
+          {/*<TouchableOpacity style={styles.actionButton} onPress={handleFormObra}>*/}
+        
           <TouchableOpacity style={styles.actionButton} onPress={handleFormObra}>
-            <Text style={styles.actionText}>Nova Obra</Text>
+          <Text style={styles.actionText}>Nova Obra</Text>
           </TouchableOpacity>
+
           {/* Botão dentro do modal para comentário */}
           <TouchableOpacity style={styles.actionButton} onPress={handleMensagem}>
             <Text style={styles.actionText}>Comentário</Text>

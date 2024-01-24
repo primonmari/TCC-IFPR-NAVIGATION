@@ -26,5 +26,4 @@ const StackRoutes = () => {
   );
 };
 
-export { StackRoutes };
-
+export default StackRoutes;
