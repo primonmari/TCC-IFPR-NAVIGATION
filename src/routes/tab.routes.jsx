@@ -1,5 +1,6 @@
   // Importa as bibliotecas 
   import React from 'react';
+  import StackRoutes from './stack.routes';
   import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
   import { MaterialCommunityIcons, Foundation, Ionicons } from '@expo/vector-icons';
   // Importa o componente View do React Native
@@ -70,7 +71,8 @@
             },
           }}
         >
-          {({ navigation }) => <New navigation={navigation} />}
+        {() => <StackRoutes />}
+
         </Tab.Screen>
         {/* Configuração da tela "Notificações" */}
         <Tab.Screen
